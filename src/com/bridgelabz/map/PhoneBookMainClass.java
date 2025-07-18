@@ -38,6 +38,7 @@ public class PhoneBookMainClass {
                         System.out.println("Contact not found");
                     }
                     break;
+
                 case 3:
                     System.out.println("Enter name to be search:");
                     String nameToSearch = sc.nextLine();
@@ -49,9 +50,11 @@ public class PhoneBookMainClass {
                         System.out.println("Contact not found");
                     }
                     break;
+
                 case 4:
                     System.out.println("All contacts");
                     pbm.listContacts();
+                    break;
 
                 case 5:
                     System.out.println("Exiting Phone Book ");
@@ -59,11 +62,7 @@ public class PhoneBookMainClass {
 
                 default:
                     System.out.println("Invalid choice");
-
-
             }
-
-
         }
         while (choice != 5);
     }

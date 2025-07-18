@@ -32,7 +32,6 @@ public class SortByValue {
         for (Map.Entry<String, Integer> entry : list) {
             result.put(entry.getKey(), entry.getValue());
         }
-
         return result;
     }
 }

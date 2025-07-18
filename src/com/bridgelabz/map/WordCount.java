@@ -15,7 +15,6 @@ public class WordCount {
             return;
         }
         Map<String, Integer> map = new HashMap<>();
-        //String[] words = s.toLowerCase().split("\\W+"); // Split on non-word characters
         String[] words = s.toLowerCase().split(" ");
         for (String word : words) {
             if (!word.isEmpty()) {
@@ -23,7 +22,6 @@ public class WordCount {
             }
         }
         System.out.println("Word occurrences:");
-
 
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " -> " + entry.getValue());

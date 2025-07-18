@@ -4,16 +4,16 @@ import java.util.*;
 
 public class IntersectionOfTwoArray {
     public static void main(String[] args) {
-        int[] a = {2, 5, 6, 8, 9, 3};
-        int[] b = {5, 20, 90, 76, 23};
+        int[] arr1 = {2, 5, 6, 8, 9, 3};
+        int[] arr2 = {5, 20, 90, 76, 23};
 
         Map<Integer, Integer> map1 = new HashMap<>();
         Map<Integer, Integer> map2 = new HashMap<>();
 
-        for (int i : a) {
+        for (int i : arr1) {
             map1.put(i, map1.getOrDefault(i, 0) + 1);
         }
-        for (int i : b) {
+        for (int i : arr2) {
             map2.put(i, map2.getOrDefault(i, 0) + 1);
         }
 

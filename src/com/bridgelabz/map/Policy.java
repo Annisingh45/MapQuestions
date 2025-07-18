@@ -47,5 +47,4 @@ public class Policy {
     public double getPremiumAmount() {
         return premiumAmount;
     }
-
 }

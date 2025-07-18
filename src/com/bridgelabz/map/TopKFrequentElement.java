@@ -32,5 +32,4 @@ public class TopKFrequentElement {
             int k = 2;
             System.out.println("Top " + k + " frequent elements: " + topKFrequent(nums, k));
         }
-
 }
